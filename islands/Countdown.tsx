@@ -22,8 +22,8 @@ export default function Countdown(props: { target: string }) {
   );
 
   if (secondsLeft <= 0) {
-    return <span>waow</span>
+    return <span>waow</span>;
   }
 
-  return <span>{timeFmt.format(secondsLeft, "seconds")}</span>
+  return <span>{timeFmt.format(secondsLeft, "seconds")}</span>;
 }

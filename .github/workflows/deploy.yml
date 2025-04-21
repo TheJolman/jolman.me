@@ -32,5 +32,3 @@ jobs:
           project: "jolman-personal"
           entrypoint: "main.ts"
           root: "."
-          
-          
