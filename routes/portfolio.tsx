@@ -1,6 +1,6 @@
 export default function PortfolioPage() {
   return (
-    <>
+    <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
       <section class="intro">
         <p>
           Hi there. I am a Computer Science student at CSU, Fullerton (Aug 2023
@@ -23,7 +23,7 @@ export default function PortfolioPage() {
         </a>
       </section>
 
-      <section class="container mx-auto items-center">
+      <section class="">
         <h3 class="section-title">Relevant Coursework</h3>
         <ul class="class-list">
           <li>Artifical Intelligence</li>
@@ -34,7 +34,7 @@ export default function PortfolioPage() {
         </ul>
       </section>
 
-      <section class="interests">
+      <section class="">
         <h3 class="section-title">My Technical Interests</h3>
         <ul class="interests-list">
           <li>Open Source Software Development</li>
@@ -54,6 +54,6 @@ export default function PortfolioPage() {
           <li>GitHub Actions, Vim</li>
         </ul>
       </section>
-    </>
+    </div>
   );
 }

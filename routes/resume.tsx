@@ -1,5 +1,7 @@
 export default function ResumePage() {
   return (
-    <p>resume page</p>
+    <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
+      <p>resume page</p>
+    </div>
   );
 }
