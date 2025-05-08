@@ -4,6 +4,7 @@
 
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
+import * as $_layout from "./routes/_layout.tsx";
 import * as $about from "./routes/about.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $portfolio from "./routes/portfolio.tsx";
@@ -11,12 +12,14 @@ import * as $resume from "./routes/resume.tsx";
 import * as $tutoring from "./routes/tutoring.tsx";
 import * as $Countdown from "./islands/Countdown.tsx";
 import * as $Counter from "./islands/Counter.tsx";
+import * as $Navbar from "./islands/Navbar.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
+    "./routes/_layout.tsx": $_layout,
     "./routes/about.tsx": $about,
     "./routes/index.tsx": $index,
     "./routes/portfolio.tsx": $portfolio,
@@ -26,6 +29,7 @@ const manifest = {
   islands: {
     "./islands/Countdown.tsx": $Countdown,
     "./islands/Counter.tsx": $Counter,
+    "./islands/Navbar.tsx": $Navbar,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
