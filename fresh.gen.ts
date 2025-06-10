@@ -10,9 +10,7 @@ import * as $index from "./routes/index.tsx";
 import * as $portfolio from "./routes/portfolio.tsx";
 import * as $resume from "./routes/resume.tsx";
 import * as $tutoring from "./routes/tutoring.tsx";
-import * as $Countdown from "./islands/Countdown.tsx";
-import * as $Counter from "./islands/Counter.tsx";
-import * as $Navbar from "./islands/Navbar.tsx";
+
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -26,11 +24,7 @@ const manifest = {
     "./routes/resume.tsx": $resume,
     "./routes/tutoring.tsx": $tutoring,
   },
-  islands: {
-    "./islands/Countdown.tsx": $Countdown,
-    "./islands/Counter.tsx": $Counter,
-    "./islands/Navbar.tsx": $Navbar,
-  },
+  islands: {},
   baseUrl: import.meta.url,
 } satisfies Manifest;
 

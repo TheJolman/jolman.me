@@ -1,12 +1,7 @@
 export default function Navbar() {
   return (
     <nav
-      className="bg-slate-800 p-2 rounded-lg"
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-      }}
+      className="bg-slate-800 p-2 rounded-lg flex justify-between items-center"
     >
       <a
         href="/"
