@@ -10,7 +10,7 @@ import * as $index from "./routes/index.tsx";
 import * as $portfolio from "./routes/portfolio.tsx";
 import * as $resume from "./routes/resume.tsx";
 import * as $tutoring from "./routes/tutoring.tsx";
-
+import * as $CollapsibleList from "./islands/CollapsibleList.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -24,7 +24,9 @@ const manifest = {
     "./routes/resume.tsx": $resume,
     "./routes/tutoring.tsx": $tutoring,
   },
-  islands: {},
+  islands: {
+    "./islands/CollapsibleList.tsx": $CollapsibleList,
+  },
   baseUrl: import.meta.url,
 } satisfies Manifest;
 
