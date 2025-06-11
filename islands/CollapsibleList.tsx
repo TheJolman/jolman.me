@@ -5,6 +5,7 @@ interface ListItem {
   title: string;
   content: string[];
 }
+
 interface CollapsibleListProps {
   items: ListItem[];
 }
@@ -49,9 +50,7 @@ function Item({ item, index, activeIndex }: {
       {isActive && (
         <div class="p-4 pt-0 text-gray-700">
           <ul class="list-disc list-inside space-y-2">
-            {item.content.map((bullet, i) => (
-              <li key={i}>{bullet}</li>
-            ))}
+            {item.content.map((bullet, i) => <li key={i}>{bullet}</li>)}
           </ul>
         </div>
       )}
@@ -73,5 +72,5 @@ export default function CollapsibleList({ items }: CollapsibleListProps) {
         />
       ))}
     </div>
-  )
+  );
 }

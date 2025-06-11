@@ -16,6 +16,7 @@ export const handler: Handlers<string> = {
   }
 }
 
+// TODO: Maybe implement some caching here
 export default function ResumePage({ data }: PageProps<string>) {
   return (
     <>
