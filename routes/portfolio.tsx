@@ -10,6 +10,7 @@ export default function PortfolioPage() {
         "API in development for club to manage data about board members, announcements, and events. Created CI pipeline and branch protection rules to enable safe collaboration with a team.",
       technologies: "Go, Gin, SQLite, OpenAPI, Nix, GitHub Actions",
       githubLink: "https://github.com/acmcsufoss/api.acmcsuf.com",
+      liveLink: "",
     },
     {
       title: "Playlist Rating Web App: Dumps or Fire",
@@ -18,6 +19,7 @@ export default function PortfolioPage() {
       technologies:
         "Django, Python, Bootstrap, Spotify API, fly.io, GitHub Actions, Docker",
       githubLink: "https://github.com/thejolman/dumps-or-fire",
+      liveLink: "",
     },
     {
       title: "Task Tracker CLI: Terminder",
@@ -25,6 +27,7 @@ export default function PortfolioPage() {
         "Simple and fast CLI that keeps track of priorities. Uses file serialization and shortest string matching for easy use.",
       technologies: "C++, Cereal, Nix, pre-commit, GitHub Actions",
       githubLink: "https://github.com/TheJolman/terminder",
+      liveLink: "",
     },
     {
       title: "MediaWiki AWS",
@@ -32,6 +35,7 @@ export default function PortfolioPage() {
         "Terraform Infrastructure as Code (IaC) for deploying MediaWiki on AWS with proper configuration and security.",
       technologies: "Terraform, AWS",
       githubLink: "https://github.com/TheJolman/mediawiki-aws",
+      liveLink: "",
     },
   ];
 
@@ -82,7 +86,7 @@ export default function PortfolioPage() {
   ];
   return (
     <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
-      <p class="font-bold mx-10 my-5">
+      <p class="font-bold mx-10 mt-5">
         Hi there. I am a Computer Science student at CSU, Fullerton (Aug 2023 -
         Dec 2025 expected). I also work part-time as a math tutor. <br /> <br />
       </p>
@@ -90,7 +94,8 @@ export default function PortfolioPage() {
       <PortfolioLinks links={links} />
 
       <div class="w-full">
-        <h2 class="text-2xl font-bold text-center mb-6">Notable Projects</h2>
+        <hr class="mx-auto my-auto" />
+        <h2 class="text-2xl font-bold text-center mt-6">Notable Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           {projects.map((project, index) => (
             <ProjectCard
