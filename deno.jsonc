@@ -14,6 +14,10 @@
       "tags": [
         "fresh",
         "recommended"
+      ],
+      // since I'm using dangerouslySetInnerHTML on the resume page
+      "exclude": [
+        "react-no-danger"
       ]
     }
   },
