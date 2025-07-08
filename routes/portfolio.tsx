@@ -76,8 +76,8 @@ export default function PortfolioPage() {
       content: "My Linkedin",
     },
     {
-      href: "https://github.com/TheJolman/resume/blob/main/resume.pdf",
-      content: "My Resume (PDF)",
+      href: "/resume",
+      content: "My Resume",
     },
   ];
   return (
