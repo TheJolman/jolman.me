@@ -1,8 +1,6 @@
 export default function Navbar() {
   return (
-    <nav
-      className="bg-slate-800 p-2 rounded-lg flex justify-between items-center"
-    >
+    <nav className="bg-slate-800 p-2 rounded-lg flex justify-between items-center">
       <a
         href="/"
         className="text-white bg-slate-600 border-b-4 border-b-slate-700 hover:bg-slate-500 font-bold rounded py-1 px-2 ml-2"
