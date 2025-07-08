@@ -21,6 +21,11 @@
       ]
     }
   },
+  "fmt": {
+    "exclude": [
+      "static/*.svg"
+    ]
+  },
   "exclude": [
     "**/_fresh/*"
   ],
