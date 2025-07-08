@@ -1,7 +1,6 @@
-# Fresh project
+# jolman.me
 
-Your new Fresh project is ready to go. You can follow the Fresh "Getting
-Started" guide here: https://fresh.deno.dev/docs/getting-started
+My personal site. Made with deno, fresh, and deno deploy.
 
 ### Usage
 
@@ -14,3 +13,5 @@ deno task start
 ```
 
 This will watch the project directory and restart as necessary.
+
+[![Made with Fresh](https://fresh.deno.dev/fresh-badge.svg)](https://fresh.deno.dev)
