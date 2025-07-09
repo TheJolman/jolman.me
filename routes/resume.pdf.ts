@@ -16,7 +16,6 @@ export const handler: Handlers = {
     return new Response(pdfBuffer, {
       headers: {
         "Content-Type": "application/pdf",
-        "Content-Disposition": "attachment; filename=resume.pdf",
       },
     });
   },
