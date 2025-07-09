@@ -24,12 +24,12 @@ export default function ResumePage({ data }: PageProps<string>) {
       <Head>
         <style dangerouslySetInnerHTML={{ __html: CSS }} />
       </Head>
-      <div class="mt-5">
+      <div className="mt-5 flex flex-col items-center">
         <HomeButton href="https://github.com/TheJolman/resume/blob/main/resume.pdf">
           PDF Version
         </HomeButton>
         <main
-          class="mx-5 my-5 markdown-body"
+          className="mx-5 my-3 markdown-body"
           dangerouslySetInnerHTML={{ __html: data }}
         />
       </div>
