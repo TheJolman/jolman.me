@@ -25,7 +25,7 @@ export default function ResumePage({ data }: PageProps<string>) {
         <style dangerouslySetInnerHTML={{ __html: CSS }} />
       </Head>
       <div className="mt-5 flex flex-col items-center">
-        <HomeButton href="https://github.com/TheJolman/resume/blob/main/resume.pdf">
+        <HomeButton href="/resume.pdf">
           PDF Version
         </HomeButton>
         <main

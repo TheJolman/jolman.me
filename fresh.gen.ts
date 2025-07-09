@@ -8,6 +8,7 @@ import * as $_layout from "./routes/_layout.tsx";
 import * as $about from "./routes/about.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $portfolio from "./routes/portfolio.tsx";
+import * as $resume_pdf from "./routes/resume.pdf.ts";
 import * as $resume from "./routes/resume.tsx";
 import * as $tutoring from "./routes/tutoring.tsx";
 import * as $CollapsibleList from "./islands/CollapsibleList.tsx";
@@ -21,6 +22,7 @@ const manifest = {
     "./routes/about.tsx": $about,
     "./routes/index.tsx": $index,
     "./routes/portfolio.tsx": $portfolio,
+    "./routes/resume.pdf.ts": $resume_pdf,
     "./routes/resume.tsx": $resume,
     "./routes/tutoring.tsx": $tutoring,
   },
