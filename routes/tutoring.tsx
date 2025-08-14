@@ -21,7 +21,7 @@ export default function TutoringPage() {
             href="mailto:josh@jolman.me"
             class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 rounded inline-block"
           >
-            josh@jolman.me
+            tutoring@jolman.me
           </a>
         </div>
 
