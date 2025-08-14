@@ -22,6 +22,7 @@ export default function ResumePage({ data }: PageProps<string>) {
   return (
     <>
       <Head>
+        <title>Josh Holman - SDE/Tech Resume</title>
         <style dangerouslySetInnerHTML={{ __html: CSS }} />
       </Head>
       <div className="mt-5 flex flex-col items-center">
