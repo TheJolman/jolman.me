@@ -1,6 +1,7 @@
 import CollapsibleList from "../islands/CollapsibleList.tsx";
 import { PortfolioLinks } from "../components/PortfolioLinks.tsx";
 import ProjectCard from "../components/ProjectCard.tsx";
+import { Head } from "$fresh/runtime.ts";
 
 export default function PortfolioPage() {
   const projects = [
@@ -85,46 +86,68 @@ export default function PortfolioPage() {
     },
   ];
   return (
-    <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
-      <div class="p-4 text-center">
-        <h1 class="text-2xl font-bold text-black mb-4">Portfolio</h1>
-        <p class="font-bold text-gray-700 mb-6">
-          Computer Science student at CSU, Fullerton (Aug 2023 - Dec 2025
-          expected)
-        </p>
-      </div>
-
-      <div class="w-full px-6 mb-6">
-        <div class="bg-gray-50 rounded-lg p-6 border border-gray-200 shadow-sm text-center">
-          <p class="text-gray-700 mb-4">
-            I am passionate about software development and also work part-time
-            as a math tutor.
+    <>
+      <Head>
+        <title>Portfolio - Josh Holman | SDE Projects</title>
+        <meta
+          name="description"
+          content="Explore Josh Holman's software development portfolio featuring full-stack applications, APIs, and open-source contributions. Computer Science student at CSU Fullerton."
+        />
+        <meta
+          name="keywords"
+          content="Josh Holman Portfolio, Software Development, Full Stack, API Development, Computer Science Projects, CSU Fullerton"
+        />
+        <meta
+          property="og:title"
+          content="Portfolio - Josh Holman | Software Development Projects"
+        />
+        <meta
+          property="og:description"
+          content="Explore Josh Holman's software development portfolio featuring full-stack applications and APIs."
+        />
+        <meta property="og:url" content="https://jolman.me/portfolio" />
+      </Head>
+      <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
+        <div class="p-4 text-center">
+          <h1 class="text-2xl font-bold text-black mb-4">Portfolio</h1>
+          <p class="font-bold text-gray-700 mb-6">
+            Computer Science student at CSU, Fullerton (Aug 2023 - Dec 2025
+            expected)
           </p>
-          <PortfolioLinks links={links} />
         </div>
-      </div>
 
-      <div class="w-full px-6">
-        <div class="mb-6">
-          <h2 class="text-2xl font-bold text-black text-center mb-6">
-            Notable Projects
-          </h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {projects.map((project, index) => (
-              <ProjectCard
-                key={index}
-                title={project.title}
-                description={project.description}
-                technologies={project.technologies}
-                liveLink={project.liveLink}
-                githubLink={project.githubLink}
-              />
-            ))}
+        <div class="w-full px-6 mb-6">
+          <div class="bg-gray-50 rounded-lg p-6 border border-gray-200 shadow-sm text-center">
+            <p class="text-gray-700 mb-4">
+              I am passionate about software development and also work part-time
+              as a math tutor.
+            </p>
+            <PortfolioLinks links={links} />
           </div>
         </div>
 
-        <CollapsibleList items={myData} />
+        <div class="w-full px-6">
+          <div class="mb-6">
+            <h2 class="text-2xl font-bold text-black text-center mb-6">
+              Notable Projects
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {projects.map((project, index) => (
+                <ProjectCard
+                  key={index}
+                  title={project.title}
+                  description={project.description}
+                  technologies={project.technologies}
+                  liveLink={project.liveLink}
+                  githubLink={project.githubLink}
+                />
+              ))}
+            </div>
+          </div>
+
+          <CollapsibleList items={myData} />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
