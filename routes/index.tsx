@@ -10,6 +10,7 @@ export default function Home() {
       <div class="flex flex-col w-40">
         <HomeButton href="/portfolio">Portfolio</HomeButton>
         <HomeButton href="/resume">Resume</HomeButton>
+        <HomeButton href="/about">About</HomeButton>
         <HomeButton href="/tutoring">Tutoring</HomeButton>
       </div>
     </div>
