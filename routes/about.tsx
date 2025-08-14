@@ -9,7 +9,7 @@ export default function AboutPage() {
       </div>
 
       <div class="w-full px-6">
-        <div class="bg-white rounded-lg p-6 mb-6 border border-gray-200 shadow-sm">
+        <div class="bg-gray-50 rounded-lg p-6 mb-6 border border-gray-200 shadow-sm">
           <h2 class="text-xl font-bold text-black mb-4">Background</h2>
           <p class="text-gray-700 mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 

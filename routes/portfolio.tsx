@@ -94,7 +94,7 @@ export default function PortfolioPage() {
       </div>
 
       <div class="w-full px-6 mb-6">
-        <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm text-center">
+        <div class="bg-gray-50 rounded-lg p-6 border border-gray-200 shadow-sm text-center">
           <p class="text-gray-700 mb-4">
             I am passionate about software development and also work part-time as a math tutor.
           </p>

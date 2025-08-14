@@ -11,7 +11,7 @@ export default function Home() {
       </div>
 
       <div class="w-full px-6 mb-6">
-        <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm text-center">
+        <div class="bg-gray-50 rounded-lg p-6 border border-gray-200 shadow-sm text-center">
           <p class="text-gray-700">
             Welcome to my personal website. Explore my portfolio, learn about my background, 
             or get in touch about tutoring services.

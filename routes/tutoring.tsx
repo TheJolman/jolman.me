@@ -26,7 +26,7 @@ export default function TutoringPage() {
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm">
+          <div class="bg-gray-50 rounded-lg p-6 border border-gray-200 shadow-sm">
             <h2 class="text-xl font-bold text-black mb-4">Rates</h2>
             <p class="text-gray-700">
               <span class="font-semibold">$25</span> for sessions up to 1 hour
@@ -36,7 +36,7 @@ export default function TutoringPage() {
             </p>
           </div>
 
-          <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm">
+          <div class="bg-gray-50 rounded-lg p-6 border border-gray-200 shadow-sm">
             <h2 class="text-xl font-bold text-black mb-4">Topics Offered</h2>
             <p class="text-gray-700 mb-3">
               All K-12 mathematics topics including:
