@@ -86,31 +86,45 @@ export default function PortfolioPage() {
   ];
   return (
     <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
-      <p class="font-bold mx-10 mt-5">
-        Hi there. I am a Computer Science student at CSU, Fullerton (Aug 2023 -
-        Dec 2025 expected). I also work part-time as a math tutor. <br /> <br />
-      </p>
+      <div class="p-4 text-center">
+        <h1 class="text-2xl font-bold text-black mb-4">Portfolio</h1>
+        <p class="font-bold text-gray-700 mb-6">
+          Computer Science student at CSU, Fullerton (Aug 2023 - Dec 2025
+          expected)
+        </p>
+      </div>
 
-      <PortfolioLinks links={links} />
-
-      <div class="w-full">
-        <hr class="mx-auto my-auto" />
-        <h2 class="text-2xl font-bold text-center mt-6">Notable Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {projects.map((project, index) => (
-            <ProjectCard
-              key={index}
-              title={project.title}
-              description={project.description}
-              technologies={project.technologies}
-              liveLink={project.liveLink}
-              githubLink={project.githubLink}
-            />
-          ))}
+      <div class="w-full px-6 mb-6">
+        <div class="bg-gray-50 rounded-lg p-6 border border-gray-200 shadow-sm text-center">
+          <p class="text-gray-700 mb-4">
+            I am passionate about software development and also work part-time
+            as a math tutor.
+          </p>
+          <PortfolioLinks links={links} />
         </div>
       </div>
 
-      <CollapsibleList items={myData} />
+      <div class="w-full px-6">
+        <div class="mb-6">
+          <h2 class="text-2xl font-bold text-black text-center mb-6">
+            Notable Projects
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {projects.map((project, index) => (
+              <ProjectCard
+                key={index}
+                title={project.title}
+                description={project.description}
+                technologies={project.technologies}
+                liveLink={project.liveLink}
+                githubLink={project.githubLink}
+              />
+            ))}
+          </div>
+        </div>
+
+        <CollapsibleList items={myData} />
+      </div>
     </div>
   );
 }
