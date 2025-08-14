@@ -10,6 +10,8 @@ import * as $index from "./routes/index.tsx";
 import * as $portfolio from "./routes/portfolio.tsx";
 import * as $resume_pdf from "./routes/resume.pdf.ts";
 import * as $resume from "./routes/resume.tsx";
+import * as $robots_txt from "./routes/robots.txt.ts";
+import * as $sitemap_xml from "./routes/sitemap.xml.ts";
 import * as $tutoring from "./routes/tutoring.tsx";
 import * as $CollapsibleList from "./islands/CollapsibleList.tsx";
 import type { Manifest } from "$fresh/server.ts";
@@ -24,6 +26,8 @@ const manifest = {
     "./routes/portfolio.tsx": $portfolio,
     "./routes/resume.pdf.ts": $resume_pdf,
     "./routes/resume.tsx": $resume,
+    "./routes/robots.txt.ts": $robots_txt,
+    "./routes/sitemap.xml.ts": $sitemap_xml,
     "./routes/tutoring.tsx": $tutoring,
   },
   islands: {
