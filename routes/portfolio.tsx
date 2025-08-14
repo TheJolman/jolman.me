@@ -89,14 +89,16 @@ export default function PortfolioPage() {
       <div class="p-4 text-center">
         <h1 class="text-2xl font-bold text-black mb-4">Portfolio</h1>
         <p class="font-bold text-gray-700 mb-6">
-          Computer Science student at CSU, Fullerton (Aug 2023 - Dec 2025 expected)
+          Computer Science student at CSU, Fullerton (Aug 2023 - Dec 2025
+          expected)
         </p>
       </div>
 
       <div class="w-full px-6 mb-6">
         <div class="bg-gray-50 rounded-lg p-6 border border-gray-200 shadow-sm text-center">
           <p class="text-gray-700 mb-4">
-            I am passionate about software development and also work part-time as a math tutor.
+            I am passionate about software development and also work part-time
+            as a math tutor.
           </p>
           <PortfolioLinks links={links} />
         </div>
@@ -104,7 +106,9 @@ export default function PortfolioPage() {
 
       <div class="w-full px-6">
         <div class="mb-6">
-          <h2 class="text-2xl font-bold text-black text-center mb-6">Notable Projects</h2>
+          <h2 class="text-2xl font-bold text-black text-center mb-6">
+            Notable Projects
+          </h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             {projects.map((project, index) => (
               <ProjectCard

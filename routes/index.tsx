@@ -4,7 +4,9 @@ export default function Home() {
   return (
     <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
       <div class="p-4 text-center">
-        <h1 class="text-2xl font-bold text-black mb-4">Hello! I'm Josh Holman</h1>
+        <h1 class="text-2xl font-bold text-black mb-4">
+          Hello! I'm Josh Holman
+        </h1>
         <p class="font-bold text-gray-700 mb-6">
           Computer Science Student & Software Developer
         </p>
@@ -13,8 +15,8 @@ export default function Home() {
       <div class="w-full px-6 mb-6">
         <div class="bg-gray-50 rounded-lg p-6 border border-gray-200 shadow-sm text-center">
           <p class="text-gray-700">
-            Welcome to my personal website. Explore my portfolio, learn about my background, 
-            or get in touch about tutoring services.
+            Welcome to my personal website. Explore my portfolio, learn about my
+            background, or get in touch about tutoring services.
           </p>
         </div>
       </div>
